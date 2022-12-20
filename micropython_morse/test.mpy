@@ -1,0 +1,12 @@
+from machine import Pin
+from  utime import sleep_ms
+from bps_morse import Character
+
+x=Pin(25,Pin.OUT)
+y=Character(x,100)
+g="hello bps  [?/\)."
+
+for i in g:
+    y.morse_out(i)
+    print(i)
+    sleep_ms(100)
