@@ -8,7 +8,8 @@ ch_n=int(input('enter number of character \n '))
 for ch in range(ch_n):
     x=r.choice(s.ascii_uppercase)
     y=r.choice(s.digits)
-    char_lis=[x,y]
+    z=r.choice(s.punctuation)
+    char_lis=[x,y,z]
     char_speak=r.choice(char_lis)
     print("char_speak = "+char_speak)
     try:
