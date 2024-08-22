@@ -306,7 +306,7 @@ class Character(morse_code):
 
     def morse_out(self,char):
         if char.isupper():
-            return char.lower()
+            char = char.lower()
         ch_dict={"a":self.a,"b":self.b,"c":self.c,"d":self.d,"e":self.e,"f":self.f,"g":self.g,"h":self.h,"i":self.i,"j":self.j,
         "k":self.k,"l":self.l,"m":self.m,"n":self.n,"o":self.o,"p":self.p,"q":self.q,"r":self.r,"s":self.s,"t":self.t,"u":self.u,"v":self.v,"w":self.w,"x":self.x,"y":self.y,"z":self.z,
         " ":self.space,".":self.period,"0":self._0,"1":self._1,"2":self._2,"3":self._3,"4":self._4,"5":self._5,"6":self._6,
