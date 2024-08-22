@@ -3,6 +3,9 @@
         "pyttsx"
     ],
     "cSpell.words": [
-        "charac"
+        "apos",
+        "brack",
+        "charac",
+        "urandom"
     ]
 }

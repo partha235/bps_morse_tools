@@ -1,0 +1,18 @@
+import urandom as r
+from machine import Pin
+from utime import sleep_ms
+from bps_morse import Character
+
+led=Pin(13,Pin.OUT)
+
+x=Character(led,100)
+
+c=['N', 'O', 'F', 'B', 'S', 'R', 'D', 'K', 'M', 'X', 'E', 
+        'C', 'P', 'L', 'G', 'J', 'H', 'W', 'Y', 
+                'V', 'Q', 'U', 'Z', 'I', 'A', 'T']
+
+while True:
+    d=r.choice(c)
+    x.morse_out(d)
+    print(d)
+    sleep_ms(100)
