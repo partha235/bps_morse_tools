@@ -3,6 +3,7 @@ import datetime as dt
 import turtle as t
 import string as s
 import random as r
+import os 
 
 t.pensize(50)
 t.screensize(100,100,"green")
